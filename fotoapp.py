@@ -407,7 +407,7 @@ def menu_principal():
 
     while True:
         print("\n" + "-" * 30)
-        print(" 📸 FOTOAPP") .
+        print(" 📸 FOTOAPP")
         print("-" * 30)
         if _imagen_actual is not None:
             print(f"✓ {os.path.basename(_ruta_actual)}")
