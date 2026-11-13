@@ -25,6 +25,7 @@ import sys
 # ============================================================
 # CONFIGURACIÓN DE CARPETAS
 # ============================================================
+MAX_DIMENSION = 1500  # Límite de resolución para procesamiento rápido
 CARPETA_ORIGINAL = "fotos_originales"
 CARPETA_MEJORADA = "fotos_mejoradas"
 CARPETA_RESULTADOS = "resultados"
@@ -98,6 +99,12 @@ def cargar_imagen(ruta_o_url):
 
         if imagen.mode != 'RGB':
             imagen = imagen.convert('RGB')
+
+        ancho, alto = imagen.size  # Redimensionar si excede MAX_DIMENSION (optimización)
+        if max(ancho, alto) > MAX_DIMENSION:
+            escala = MAX_DIMENSION / max(ancho, alto)
+            nueva_dimension = (int(ancho * escala), int(alto * escala))
+            imagen = imagen.resize(nueva_dimension, Image.Resampling.LANCZOS)
         return imagen
     except Exception as e:
         raise ValueError(f"Error al cargar la imagen: {str(e)}")
@@ -122,7 +129,7 @@ def mostrar_y_guardar(fig, nombre_archivo):
     plt.show()
 
     ruta_guardado = os.path.join(CARPETA_RESULTADOS, nombre_archivo)
-    fig.savefig(ruta_guardado, dpi=100, bbox_inches='tight')
+    fig.savefig(ruta_guardado, dpi=72, bbox_inches='tight')
     print(f"💾 Guardada en: {ruta_guardado}")
 
     input("\n⏎  [ Presione ENTER para volver al menú ]  ⏎\n")
