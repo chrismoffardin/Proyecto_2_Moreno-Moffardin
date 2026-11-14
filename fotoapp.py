@@ -20,7 +20,6 @@ from io import BytesIO
 import os
 import cv2
 import numpy as np
-import sys
 
 # ============================================================
 # CONFIGURACIÓN DE RENDIMIENTO
@@ -68,7 +67,6 @@ FILTROS_PILLOW = {
 # ============================================================
 _imagen_actual = None
 _ruta_actual = None
-
 
 # ============================================================
 # FUNCIONES AUXILIARES DE CARGA
@@ -379,7 +377,7 @@ def menu_secundario():
 
             elif opcion == "0":
                 print("👋 ¡Hasta luego!")
-                sys.exit()
+                return "SALIR"
 
             else:
                 print("❌ Opción no válida.")
@@ -427,7 +425,9 @@ def menu_principal():
             if _imagen_actual is None:
                 print("⚠️ Cargue una imagen primero (opción 1).")
             else:
-                menu_secundario()
+                resultado = menu_secundario()
+                if resultado == "SALIR":
+                    break
 
         elif opcion == "0":
             print("👋 ¡Hasta luego!")
