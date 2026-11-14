@@ -62,4 +62,4 @@ El proyecto utiliza las siguientes librerías estándar de Python:
 
 El sistema implementa un menú de dos niveles que **obliga al usuario a cargar una imagen** antes de acceder a las operaciones, garantizando la integridad del flujo de trabajo y manejando excepciones de forma controlada.
 
-![Diagrama de Flujo del Menú](diagrama_flujo.png)
+![Diagrama de Flujo del Menú](https://raw.githubusercontent.com/chrismoffardin/Proyecto_2_Moreno-Moffardin/refs/heads/main/diagrama_flujo.png)
