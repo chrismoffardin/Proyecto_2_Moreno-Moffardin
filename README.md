@@ -45,7 +45,6 @@ El proyecto utiliza las siguientes librerías estándar de Python:
    # Iniciar el menú interactivo
    fotoapp.menu_principal()
 
-
 ---
 
 ## 🛠️ Funciones Principales
