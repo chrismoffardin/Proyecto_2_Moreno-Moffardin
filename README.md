@@ -31,7 +31,7 @@ El proyecto utiliza las siguientes librerías estándar de Python:
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
-### Opción A: Google Colab (Recomendado)
+### Opción A: Google Colab
 1. Abre un nuevo notebook en [Google Colab](https://colab.research.google.com/).
 2. Ejecuta la siguiente celda para clonar el repositorio e iniciar el menú:
    ```python
@@ -45,7 +45,7 @@ El proyecto utiliza las siguientes librerías estándar de Python:
    # Iniciar el menú interactivo
    fotoapp.menu_principal()
    ```
-### 📝 Nota sobre las Pruebas (Notebook)
+### 📝 Nota sobre las Pruebas (Notebook) Opción B: Google Colab
 Para evaluar el funcionamiento de todas las funciones de forma automática, abrír el archivo [**`fotoapp_testdev.ipynb`**](https://github.com/chrismoffardin/Proyecto_2_Moreno-Moffardin/blob/main/fotoapp_testdev.ipynb) en Google Colab y ejecutá las celdas en orden. Este notebook demuestra el procesamiento sin necesidad de interactuar manualmente con el menú.
 
 ---
