@@ -45,6 +45,8 @@ El proyecto utiliza las siguientes librerías estándar de Python:
    # Iniciar el menú interactivo
    fotoapp.menu_principal()
    ```
+### 📝 Nota sobre las Pruebas (Notebook)
+Para evaluar el funcionamiento de todas las funciones de forma automática, abrír el archivo [**`fotoapp_testdev.ipynb`**](https://github.com/chrismoffardin/Proyecto_2_Moreno-Moffardin/blob/main/fotoapp_testdev.ipynb) en Google Colab y ejecutá las celdas en orden. Este notebook demuestra el procesamiento sin necesidad de interactuar manualmente con el menú.
 
 ---
 
