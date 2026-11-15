@@ -1,5 +1,5 @@
-# 📸 Proyecto 2 - Parte 1: Procesamiento de Imágenes con Python
-**Autores:** Moreno - Moffardin  
+# Proyecto 2 - Parte 1: Procesamiento de Imágenes con Python
+**Autores:** Emanuel Moreno - Christian Moffardin  
 **Materia:** Programación Python Avanzada 2026  
 
 Módulo de procesamiento de imágenes diseñado para preparar fotografías para redes sociales, cumpliendo con estándares de calidad, redimensionado inteligente y análisis de contraste.
