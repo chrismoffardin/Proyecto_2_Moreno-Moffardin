@@ -5,7 +5,6 @@
 Módulo de procesamiento de imágenes diseñado para preparar fotografías para redes sociales, cumpliendo con estándares de calidad, redimensionado inteligente y análisis de contraste.
 
 ---
-
 ## 📂 Estructura del Repositorio
 
 ```text
@@ -18,7 +17,6 @@ Proyecto_2_Moreno-Moffardin/
 └── README.md                  # Este archivo
 ```
 ---
-
 ## ⚙️ Requisitos y Dependencias
 
 El proyecto utiliza las siguientes librerías estándar de Python:
@@ -28,10 +26,12 @@ El proyecto utiliza las siguientes librerías estándar de Python:
 - `Requests`: Descarga y procesamiento de imágenes desde URLs en memoria.
 
 ---
-
 ## 🚀 Cómo Ejecutar el Proyecto
 
-### Opción A: Google Colab
+### Opción A: Ejecución Automática (Notebook de Pruebas) desde GITHUB
+Para evaluar el funcionamiento de todas las funciones de forma automática, abrír el archivo [**`fotoapp_testdev.ipynb`**](https://github.com/chrismoffardin/Proyecto_2_Moreno-Moffardin/blob/main/fotoapp_testdev.ipynb) en Google Colab y ejecutá las celdas en orden. Este notebook demuestra el procesamiento sin necesidad de interactuar manualmente con el menú.
+
+### Opción B: Menú Interactivo en Google Colab
 1. Abre un nuevo notebook en [Google Colab](https://colab.research.google.com/).
 2. Ejecuta la siguiente celda para clonar el repositorio e iniciar el menú:
    ```python
@@ -45,11 +45,7 @@ El proyecto utiliza las siguientes librerías estándar de Python:
    # Iniciar el menú interactivo
    fotoapp.menu_principal()
    ```
-### 📝 Nota sobre las Pruebas (Notebook) Opción B: Google Colab
-Para evaluar el funcionamiento de todas las funciones de forma automática, abrír el archivo [**`fotoapp_testdev.ipynb`**](https://github.com/chrismoffardin/Proyecto_2_Moreno-Moffardin/blob/main/fotoapp_testdev.ipynb) en Google Colab y ejecutá las celdas en orden. Este notebook demuestra el procesamiento sin necesidad de interactuar manualmente con el menú.
-
 ---
-
 ## 🛠️ Funciones Principales
 
 1. **`cargar_imagen_sistema()`**: Función obligatoria (Paso 1). Carga la imagen desde ruta local o URL, la optimiza y la almacena en memoria.
@@ -59,7 +55,6 @@ Para evaluar el funcionamiento de todas las funciones de forma automática, abr�
 5. **`detectar_bordes()`**: Compara dos técnicas de detección de contornos: el filtro `FIND_EDGES` de Pillow y el algoritmo `Canny` de OpenCV.
 
 ---
-
 ## 🔄 Diagrama de Flujo del Menú
 
 El sistema implementa un menú de dos niveles que **obliga al usuario a cargar una imagen** antes de acceder a las operaciones, garantizando la integridad del flujo de trabajo y manejando excepciones de forma controlada.
