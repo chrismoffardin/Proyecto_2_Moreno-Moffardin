@@ -271,8 +271,7 @@ def detectar_bordes():
     bordes_pillow = _imagen_actual.filter(ImageFilter.FIND_EDGES)
 
     img_np = np.array(_imagen_actual)
-    img_bgr = cv2.cvtColor(img_np, cv2.COLOR_RGB2BGR)
-    img_gris = cv2.cvtColor(img_bgr, cv2.COLOR_BGR2GRAY)
+    img_gris = cv2.cvtColor(img_np, cv2.COLOR_RGB2GRAY)
     bordes_canny_np = cv2.Canny(img_gris, 100, 200)
     bordes_canny = Image.fromarray(bordes_canny_np)
 
