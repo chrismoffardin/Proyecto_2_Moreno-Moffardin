@@ -116,9 +116,9 @@ def mostrar_y_guardar(fig, nombre_archivo):
     fig.savefig(ruta_guardado, dpi=72, bbox_inches='tight')
     print(f"💾 Comparativa guardada en: {ruta_guardado}")
 
-    plt.show()
-
     input("\n⏎  [ Presione ENTER para volver al menú ]  ⏎\n")
+
+    plt.show()
 
     plt.close(fig)
 
